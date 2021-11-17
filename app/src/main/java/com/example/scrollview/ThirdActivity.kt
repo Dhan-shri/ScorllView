@@ -8,9 +8,21 @@ import android.widget.Button
 import android.widget.EditText
 
 class ThirdActivity : AppCompatActivity(), View.OnClickListener {
+    lateinit var name:String
+    lateinit var Age:String
+    lateinit var color:String
+    lateinit var food:String
+    lateinit var education:String
+    lateinit var love:String
+    lateinit var flower:String
+    lateinit var sport:String
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
+//        nameEdit = findViewById(R.id.name)
+//        AgeEdit = findViewById(R.id.Age)
 
 
         val butthird = findViewById<Button>(R.id.butthird)
@@ -19,16 +31,16 @@ class ThirdActivity : AppCompatActivity(), View.OnClickListener {
 
 
     }
-
     override fun onClick(v: View?) {
-        val name = findViewById<EditText>(R.id.name).text.toString()
-        val Age = findViewById<EditText>(R.id.Age).text.toString()
-        val color = findViewById<EditText>(R.id.color).text.toString()
-        val food = findViewById<EditText>(R.id.food).text.toString()
-        val education = findViewById<EditText>(R.id.education).text.toString()
-        val love = findViewById<EditText>(R.id.love).text.toString()
-        val flower = findViewById<EditText>(R.id.flower).text.toString()
-        val sport = findViewById<EditText>(R.id.sport).text.toString()
+
+        name = findViewById<EditText>(R.id.name).text.toString()
+        Age = findViewById<EditText>(R.id.Age).text.toString()
+        color = findViewById<EditText>(R.id.color).text.toString()
+        food = findViewById<EditText>(R.id.food).text.toString()
+        education = findViewById<EditText>(R.id.education).text.toString()
+        love = findViewById<EditText>(R.id.love).text.toString()
+        flower = findViewById<EditText>(R.id.flower).text.toString()
+        sport = findViewById<EditText>(R.id.sport).text.toString()
 
         when(v?.id){
             R.id.butthird ->{
